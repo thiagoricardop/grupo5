@@ -10,3 +10,5 @@ def division(numerator: float, denominator: float) -> float:
         raise ZeroDivisionError("Erro: divisão por zero não permitida.")
     return numerator / denominator
 
+def multiplication(factor1: float, factor2: float) -> float:
+    return factor1 * factor2
