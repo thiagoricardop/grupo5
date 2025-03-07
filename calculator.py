@@ -20,5 +20,16 @@ def division(numerator, denominator):
         raise ZeroDivisionError("Erro: divisão por zero não permitida.")
     return numerator / denominator
 
+<<<<<<< HEAD
 def multiplication(factor1, factor2):
+=======
+def sum (x, y):
+    return x + y
+
+def sub (x, y):
+    return x - y
+
+def multiplication(factor1: float, factor2: float) -> float:
+>>>>>>> 53123ebe4cb5d7ba85a6a261d13c901a17c3f372
     return factor1 * factor2
+
