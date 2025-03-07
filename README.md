@@ -28,6 +28,12 @@ Uma calculadora científica de terminal que realiza operações básicas e avan�
 **Prioridade dos operadores**:  
 A calculadora segue a ordem PEMDAS (Parênteses, Expoentes, Multiplicação/Divisão, Adição/Subtração), com operadores adicionais como fatorial e raiz quadrada tendo prioridade adequada.
 
+**Uso de expressões numéricas dentro da operação de raíz quadrada e exponenciação**:
+Devem estar dentro de parênteses "()" para que a expressão seja resolvida antes da operação principal.
+Exemplo:
+v(2*5+6) -> v(10+6) -> v16 -> 4. Resultado igual a 4.
+v2*5+6 -> 1.414*5+6 -> 7.07 + 6 -> 13.07.
+
 ## Exemplos de Entrada/Saída
 
 ### Exemplo 1:
