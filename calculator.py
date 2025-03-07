@@ -2,6 +2,9 @@
 
 import math
 
+def log(a):
+    return math.log(a)
+
 def power(base: float, exponent: float) -> float:
     return math.pow(base, exponent)
 
