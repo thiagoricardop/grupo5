@@ -1,6 +1,4 @@
 # Calculator - Group 5
-import sum
-import subtract
 
 import math
 
