@@ -34,6 +34,9 @@ Devem estar dentro de parênteses "()" para que a expressão seja resolvida ante
 v(2\*5+6) -> v(10+6) -> v16 -> 4. **Resultado igual a 4**.  
 v2\*5+6 -> 1.414\*5+6 -> 7.07 + 6 -> 13.07. **Resultado igual a 13.07**.
 
+(2\*3 - 4)^(2+5) -> (6 - 4)^7 -> 2^7 -> 128. **Resultado igual a 128**.
+2\*3 - 4^2 +5 -> 6 -16 + 5 -> -10 + 5 -> -5. **Resultado igual a -5**. 
+
 ## Exemplos de Entrada/Saída
 
 ### Exemplo 1:
