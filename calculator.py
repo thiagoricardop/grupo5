@@ -22,3 +22,7 @@ def sub (x, y):
 def multiplication(factor1: float, factor2: float) -> float:
     return factor1 * factor2
 
+def square_root(number: float) -> float:
+    if number < 0:
+        raise ValueError("Erro: raiz quadrada de número negativo não permitida.")
+    return math.sqrt(number)
