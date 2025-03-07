@@ -1,8 +1,12 @@
 import math
 
-def log(a):
-    return math.log(a)
+def factorial(a):
+    result = a
+    for i in range(a-1, 0, -1):
+        result *= i
+    return result
 
-def input_treat(input):
-    if input != NULL:
-        
+
+def log(a):
+    return math.log(a)        
+
