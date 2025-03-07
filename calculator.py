@@ -2,6 +2,8 @@
 
 import math
 
+def log(a):
+    return math.log(a)
 
 def power(base: float, exponent: float) -> float:
     return math.pow(base, exponent)
@@ -17,7 +19,6 @@ def sum (x, y):
 def sub (x, y):
     return x - y
 
-
-
-
+def multiplication(factor1: float, factor2: float) -> float:
+    return factor1 * factor2
 
