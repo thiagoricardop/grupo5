@@ -74,9 +74,11 @@ def evaluate_expression(expression: str) -> float:
         raise ValueError(f"Erro ao processar a expressão: {e}")
 
 if __name__ == "__main__":
-    try:
-        user_input = input("Digite uma expressão matemática: ")
-        result = evaluate_expression(user_input)
-        print("Resultado:", result)
-    except Exception as e:
-        print("Erro:", e)
+    while(True):
+        try:
+            user_input = input("Digite uma expressão matemática: ")
+            result = evaluate_expression(user_input)
+            print("Resultado:", result)
+            break
+        except Exception as e:
+            print("Erro: {} - tente novamente!".format(e))
