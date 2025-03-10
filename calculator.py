@@ -41,24 +41,25 @@ def treat_input(expression: str) -> str:
     """
     expression = expression.replace(" ", "")  # Remove espaços
     
-    # Verifica caracteres permitidos
-    if not re.match(r'^[0-9+\-*/^()!velog]+$', expression):
+    expression = expression.replace(",", ".")
+    # Verifica caracteres permitidos, incluindo números decimais
+    if not re.match(r'^[0-9.()+\-*/^!velog]+$', expression):
         raise ValueError("Entrada inválida: caracteres não permitidos.")
     
     # Processa operador de fatorial (!) substituindo por factorial()
     expression = re.sub(r'(\d+)!', r'factorial(\1)', expression)
     
     # Processa operador de raiz quadrada (v) substituindo por square_root()
-    expression = re.sub(r'v(\d+)', r'square_root(\1)', expression)
+    expression = re.sub(r'v(\d+(\.\d+)?)', r'square_root(\1)', expression)
     
     # Processa operador de exponenciação (^) substituindo por power()
-    expression = re.sub(r'(\d+)\^(\d+)', r'power(\1, \2)', expression)
+    expression = re.sub(r'(\d+(\.\d+)?)\^(\d+(\.\d+)?)', r'power(\1, \3)', expression)
     
     # Trata números científicos com 'e' (exemplo: 1e3 para 1000)
-    expression = re.sub(r'(\d+)e(\d+)', r'\1*10**\2', expression)
+    expression = re.sub(r'(\d+(\.\d+)?)e(\d+)', r'\1*10**\3', expression)
     
     # Processa logaritmo (log) substituindo por log()
-    expression = re.sub(r'log\((\d+)\)', r'log(\1)', expression)
+    expression = re.sub(r'log\((\d+(\.\d+)?)\)', r'log(\1)', expression)
     
     return expression
 
