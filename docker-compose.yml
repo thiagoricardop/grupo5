@@ -1,0 +1,10 @@
+services:
+  calculator:
+    build: .
+    container_name: calculator_app
+    command: python calculator.py
+    stdin_open: true
+    tty: true
+    volumes:
+      - .:/app  # Isso monta a pasta do projeto no diretório /app no container
+    working_dir: /app  # Define o diretório de trabalho dentro do container
