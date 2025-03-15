@@ -64,6 +64,8 @@ jobs:
         env:
           TAGS: ${{ steps.meta.outputs.tags }}
           DIGEST: ${{ steps.build-and-push.outputs.digest }}
+          COSIGN_EXPERIMENTAL: 1  # Set the environment variable to bypass the prompt
         run: |
           echo "Signing image with cosign..."
           echo "${TAGS}" | xargs -I {} cosign sign {}@${DIGEST}
+
