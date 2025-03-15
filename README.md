@@ -1,5 +1,7 @@
 [![Docker](https://github.com/thiagoricardop/grupo5/actions/workflows/docker-build.yml/badge.svg)](https://github.com/thiagoricardop/grupo5/actions/workflows/docker-build.yml)
 
+[![Python application](https://github.com/thiagoricardop/grupo5/actions/workflows/pytest_automation.yml/badge.svg)](https://github.com/thiagoricardop/grupo5/actions/workflows/pytest_automation.yml)
+
 # Calculadora Científica - Grupo 5
 
 Uma calculadora científica de terminal que realiza operações básicas e avançadas, processando expressões matemáticas com suporte a prioridade de operadores.
