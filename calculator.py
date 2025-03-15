@@ -2,22 +2,17 @@ import regex as re  # Use a biblioteca "regex" (pip install regex)
 import math
 
 def factorial(a):
-    a = round(float(a))
-    a = int(a)
-    result = a
-    for i in range(a - 1, 0, -1):
-        result *= i
-    return result
+    return math.factorial(a)
 
-def call_log(a):
-    return math.log(a)
+def log(a):
+    return math.log10(a)
 
 def power(base, exponent):
     return math.pow(base, exponent)
 
 def division(numerator, denominator):
     if denominator == 0:
-        raise ZeroDivisionError("Erro: divisão por zero não permitida.")
+        raise ZeroDivisionError
     return numerator / denominator
 
 def sum(x, y):
@@ -50,12 +45,6 @@ def replace_exponentiation(match):
     expo = match.group("expo")
     return f'power({base}, {expo})'
 
-def replace_log_with_base(match):
-    base = match.group("base")
-    arg = match.group("arg")
-    evaluated_arg = evaluate_expression(arg)
-    return f'log({evaluated_arg}, {base})'
-
 def replace_log_no_base(match):
     arg = match.group("arg")
     evaluated_arg = evaluate_expression(arg)
@@ -87,17 +76,9 @@ def treat_input(expression: str) -> str:
     # Trata números científicos com 'e' (ex: 1e3 vira 1*10**3)
     expression = re.sub(r'(\d+(?:\.\d+)?)e(\d+)', r'\1*10**\2', expression)
     
-    # Processa log com base: ex: "3log(20*2-13)"
-    pattern_log_with_base = r'(?<![\d.])(?P<base>\d+)log\((?P<arg>[^)]+)\)'
-    expression = re.sub(pattern_log_with_base, replace_log_with_base, expression)
-    
-    # Processa log sem base: não casa se houver vírgula no argumento
-    pattern_log_no_base = r'(?<![\d.])log\((?!.*?,)(?P<arg>[^)]+)\)'
-    expression = re.sub(pattern_log_no_base, replace_log_no_base, expression)
-    
-    # Etapa final: se ainda houver '^', substitui por '**'
-    if '^' in expression:
-        expression = expression.replace('^', '**')
+    # Processa log com base 10
+    pattern_log = r'(?<![\d.])log\((?!.*?,)(?P<arg>[^)]+)\)'
+    expression = re.sub(pattern_log, replace_log_no_base, expression)
     
     # **Solução:** Substitui "v(" por "square_root(", garantindo a conversão mesmo com fatorial no argumento.
     expression = expression.replace("v(", "square_root(")
@@ -112,7 +93,7 @@ def evaluate_expression(expression: str) -> float:
         sanitized_expression = treat_input(expression)
         print("Expressão tratada:", sanitized_expression)
         result = eval(sanitized_expression, {
-            "math": math,
+            
             "factorial": factorial,
             "power": power,
             "division": division,
@@ -120,18 +101,8 @@ def evaluate_expression(expression: str) -> float:
             "sum": sum,
             "sub": sub,
             "square_root": square_root,
-            "log": math.log
+            "log": log
         })
         return result
     except Exception as e:
-        raise ValueError(f"Erro ao processar a expressão: {e}")
-
-if __name__ == "__main__":
-    while True:
-        try:
-            user_input = input("Digite uma expressão matemática: ")
-            result = evaluate_expression(user_input)
-            print("Resultado:", result)
-            break
-        except Exception as e:
-            print(e)
+        raise e
