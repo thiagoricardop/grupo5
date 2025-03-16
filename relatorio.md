@@ -4,10 +4,10 @@
 - Utilizamos o Git Flow.
 
 ## 2. Procedimentos de build e CI/CD:
-- **Build**:Utilizamos o arquivo makefile que compila e executa o código principal ou o código de testes, segue os comandos do makefile:  
-    1. **make all** (executa o código principal e o arquivo de testes);  
-    2. **make run** (executa o código principal);  
-    3. **make test** (executa o arquivo de testes);
+- **Build**: Utilizamos o arquivo makefile para compilar e executar o código principal ou o código de testes, segue os comandos do makefile:  
+    - **make all** (executa o código principal e o arquivo de testes);  
+    - **make run** (executa o código principal);  
+    - **make test** (executa o arquivo de testes);
 - **Continuous Integration:**  
       - Git hub actions com verificação de sintaxe (lint). Execução do arquivo "test_calculator.py".  
       - Verificação do resultado dos testes unitarios automatizados antes da solicitação de pull request;  
@@ -29,5 +29,5 @@
 - Primeiramente enumeramos as issues do projeto (bugs e funcionalidades) e marcamos como concluída através da configuração dos pull requests. Ou marcamos manualmente após a aprovação e merge do PR para o branch principal (main).
 
 ## 6. Lições aprendidas:
-- Aprendemos como é feita a integração da equipe na implementação de um projeto computacional. Conhecemos ferramentas novas que ajudam bastante no desenvolvimento em equipe, uso de issues git actions e integração de testes unitários por exemplo;
-- O uso de branches para cada funcionalidade ou correção de bugs também ajuda na organização, demanda um certo tempo para se acostumar com a estrutura mas após isso facilita com a manutenção do código;
+- Aprendemos como é feita a integração da equipe na implementação de um projeto computacional. Conhecemos ferramentas novas que ajudam bastante no desenvolvimento em equipe, como por exemplo o uso de issues, git actions e integração de testes unitários;
+- O uso de branches para cada funcionalidade ou correção de bugs também ajuda na organização, demanda um certo tempo para se acostumar com a estrutura mas após isso facilita a manutenção do código;
