@@ -6,8 +6,8 @@
 ## 2. Procedimentos de build e CI/CD:
 - **Build**: Utilizamos o arquivo makefile para compilar e executar o código principal e/ou o código de testes, segue os comandos do makefile:  
     - **make all** (executa o código principal e o arquivo de testes);  
-    - **make run** (executa o código principal);  
-    - **make test** (executa o arquivo de testes);
+    - **make run** (executa apenas o código principal);  
+    - **make test** (executa apenas o arquivo de testes);
 - **Continuous Integration:**  
       - Uso do Github actions para monitorar os pull requests, com execução dos arquivos "docker-build.yml", "label_issues_automation.yml" e "pytest_automation.yml".   
 - **Continuous Deployment:**  
