@@ -5,8 +5,8 @@
 
 ## 2. Procedimentos de build e CI/CD:
 - **Build**: arquivo makefile que configura, compila e executa o código principal ou o código de testes, segue os comandos do makefile:  
-    1. **make all** (executa o código e o arquivo de testes);  
-    2. **make run** (executa o código);  
+    1. **make all** (executa o código principal e o arquivo de testes);  
+    2. **make run** (executa o código principal);  
     3. **make test** (executa o arquivo de testes);
 - **Continuous Integration:** Git hub actions com verificação de sintaxe (lint). Execução do arquivo "test_calculator.py" e verificação do resultado dos testes unitarios automatizados antes da solicitação de pull request;
 - **Continuous Deployment:** Trasferencia remota para a máquina individual e upload do projeto atualizado com uma branch especifica para aquela funcionalidade, usando pull request para revisão;
