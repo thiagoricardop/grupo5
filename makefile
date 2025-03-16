@@ -1,9 +1,8 @@
 # Makefile para Calculator - Group 5
 
-.PHONY: all run test
 
 # Alvo padrão
-all: run
+all: run test
 
 # Executa o programa
 run:
