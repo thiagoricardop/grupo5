@@ -11,11 +11,11 @@
 - **Continuous Integration:**  
       - Uso do Github actions para monitorar os pull requests, com execução dos arquivos "docker-build.yml", "label_issues_automation.yml" e "pytest_automation.yml".   
 - **Continuous Deployment:**  
-      - Transferência remota para a máquina individual e upload do projeto atualizado com uma branch especifica para aquela funcionalidade, usando pull request para revisão;
+      - Transferência remota para a máquina individual e upload do projeto atualizado com uma branch especifica para aquela funcionalidade, fazendo pull request para revisão;
 
 ## 3. Estrutura e política de testes:
 - Uso do framework pytest com o arquivo test_calculator.py;
-- O Github faz a verificação do pull request atraves dos arquivos da pasta .github/workflows
+- O Github faz a verificação do pull request através dos arquivos da pasta .github/workflows;
 
 ## 4. Forma de versionamento:
 - **Uso de releases**, com o seguinte modelo:  
