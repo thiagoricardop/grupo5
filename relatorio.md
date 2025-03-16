@@ -9,14 +9,13 @@
     - **make run** (executa o código principal);  
     - **make test** (executa o arquivo de testes);
 - **Continuous Integration:**  
-      - Git hub actions com verificação de sintaxe (lint). Execução do arquivo "test_calculator.py".  
-      - Verificação do resultado dos testes unitarios automatizados antes da solicitação de pull request;  
+      - Uso do Github actions para monitorar os pull requests, com execução dos arquivos "docker-build.yml", "label_issues_automation.yml" e "pytest_automation.yml".   
 - **Continuous Deployment:**  
       - Trasferencia remota para a máquina individual e upload do projeto atualizado com uma branch especifica para aquela funcionalidade, usando pull request para revisão;
 
 ## 3. Estrutura e política de testes:
 - Uso do framework pytest com o arquivo test_calculator.py;
-- Cada integrante deve verificar se o teste é concluído corretamente antes de fazer um pull request;
+- O Github faz a verificação do pull request atraves dos arquivos da pasta .github/workflows
 
 ## 4. Forma de versionamento:
 - **Uso de releases**, com o seguinte modelo:  
