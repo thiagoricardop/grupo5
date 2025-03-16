@@ -4,7 +4,7 @@
 - Utilizamos o Git Flow (mencionado no anunciado da atividade). 
 
 ## 2. Procedimentos de build e CI/CD:
-- **Build**: Utilizamos o arquivo makefile para compilar e executar o código principal ou o código de testes, segue os comandos do makefile:  
+- **Build**: Utilizamos o arquivo makefile para compilar e executar o código principal e/ou o código de testes, segue os comandos do makefile:  
     - **make all** (executa o código principal e o arquivo de testes);  
     - **make run** (executa o código principal);  
     - **make test** (executa o arquivo de testes);
