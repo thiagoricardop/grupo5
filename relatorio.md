@@ -1,7 +1,7 @@
 # Relatório de configuração do projeto:
 
 ## 1. Estratégia de branching utilizada:
-- Utilizamos o Git Flow (como mencionado no anunciado da atividade). 
+- Utilizamos o Git Flow (mencionado no anunciado da atividade). 
 
 ## 2. Procedimentos de build e CI/CD:
 - **Build**: Utilizamos o arquivo makefile para compilar e executar o código principal ou o código de testes, segue os comandos do makefile:  
