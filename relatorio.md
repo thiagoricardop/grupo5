@@ -1,4 +1,4 @@
-# Relatório de configuração do projeto:
+# Relatório de configuração do projeto:<br>
 
 ## 1. Estratégia de branching utilizada:
 - Utilizamos o Git Flow.
