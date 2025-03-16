@@ -11,7 +11,7 @@
 - **Continuous Integration:**  
       - Uso do Github actions para monitorar os pull requests, com execução dos arquivos "docker-build.yml", "label_issues_automation.yml" e "pytest_automation.yml".   
 - **Continuous Deployment:**  
-      - Trasferencia remota para a máquina individual e upload do projeto atualizado com uma branch especifica para aquela funcionalidade, usando pull request para revisão;
+      - Transferência remota para a máquina individual e upload do projeto atualizado com uma branch especifica para aquela funcionalidade, usando pull request para revisão;
 
 ## 3. Estrutura e política de testes:
 - Uso do framework pytest com o arquivo test_calculator.py;
@@ -29,4 +29,4 @@
 
 ## 6. Lições aprendidas:
 - Aprendemos como é feita a integração da equipe na implementação de um projeto computacional. Conhecemos ferramentas novas que ajudam bastante no desenvolvimento em equipe, como por exemplo o uso de issues, git actions e integração de testes unitários;
-- O uso de branches para cada funcionalidade ou correção de bugs também ajuda na organização, demanda um certo tempo para se acostumar com a estrutura mas após isso facilita a manutenção do código;
+- O uso de branches para cada funcionalidade ou correção de bugs também ajudam na organização, demanda um certo tempo para se acostumar com a estrutura mas após isso facilita a manutenção do código;
