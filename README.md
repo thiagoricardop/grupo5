@@ -65,7 +65,7 @@ Resultado: 32
 
 ### Exemplo 3:  
 **Entrada:**  
-Digite a expressão: ((3*4+3)^(8*6-46))/(3*5+2-v(2*3+3))  
+Digite a expressão: ((3\*4+3)^(8\*6-46))/(3\*5+2-v(2\*3+3))  
 
-**Saída**
+**Saída:**  
 Resultado: 16.071428571428573
