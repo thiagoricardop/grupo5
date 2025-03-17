@@ -32,3 +32,5 @@
 - O uso de branches para cada funcionalidade ou correção de bugs também ajudam na organização, demanda um certo tempo para se acostumar com a estrutura mas após isso facilita a manutenção do código;
 - A configuração inicial do CI/CD com o GitHub Actions foi um desafio. Tivemos que iterar várias vezes para garantir que os testes fossem executados corretamente e que o deploy fosse feito de forma automatizada.
 - A revisão de código por pares ajudou a identificar e corrigir erros antes de virarem um commit na main. Também foi uma oportunidade de aprender com os outros membros da equipe e melhorar a qualidade do código.
+- (Aurélio) Conseguimos aprender com ferramentas essenciais para o desenvolvimento de um projeto. Pois, muitas vezes, trabalharemos em um projeto com muitas pessoas, em que a várias modificações que podem possibilitar a criação de erros. Com essas ferramentas, conseguimos automotizar processos de verificação e configuração necessárias para a execução do projeto.
+- (Aurélio) Conseguimos aprender sobre fluxos de processos - git flow. Organizando a criação de novas features, correções de bugs, criação de testes e afins. 
